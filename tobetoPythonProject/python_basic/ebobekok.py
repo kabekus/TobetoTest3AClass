@@ -65,3 +65,25 @@ def ekok(sayi1,sayi2):
 
 print(f"EBOB: {ebob(sayi1,sayi2)}")
 print(f"EKOK : {ekok(sayi1,sayi2)}")  
+
+
+""" 
+sayi1 = int(input("Birinci Sayıyı Giriniz: "))
+sayi2 = int(input("İkinci Sayıyı Giriniz: "))
+
+def ebob(sayi1,sayi2):
+    kucukSayi = min(sayi1,sayi2)
+    ortakBolenler = []
+    for i in range(1,kucukSayi+1):
+        if sayi1 % i == 0 and sayi2 % i == 0:
+            ortakBolenler.append(i)
+    ortakBolenler.sort(reverse=True)
+    return ortakBolenler[0]
+
+def ekok(sayi1,sayi2):
+   ebobSonuc = ebob(sayi1,sayi2)
+   ekokSonuc = (sayi1*sayi2)/ebobSonuc
+   return ekokSonuc
+
+print(f"EBOB: {ebob(sayi1,sayi2)}")
+print(f"EKOK : {ekok(sayi1,sayi2)}")   """
